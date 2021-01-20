@@ -21,13 +21,13 @@ class GameplayFactory extends Factory
      */
     public function definition()
     {
-        Gameplay::truncate();
+      //  Gameplay::truncate();
 
         return [
             'game_id' => rand(1, 5),
             'starter_player_id' => rand(1, 10),
             'number_of_players' => rand(1, 4),
-            'day' => 'day_'.rand(1, 20),
+            'day' => 'day_'.rand(1, 3835),
         ];
     }
 }

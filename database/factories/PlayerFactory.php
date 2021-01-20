@@ -21,7 +21,7 @@ class PlayerFactory extends Factory
      */
     public function definition()
     {
-        Player::truncate();
+        //Player::truncate();
 
         return [
             'name' => $this->faker->name,

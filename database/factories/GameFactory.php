@@ -47,7 +47,7 @@ class GameFactory extends Factory
     {
         return [
             'name' => $this->randomGames(),
-            'version' => $this->gameversions(),
+            'version' => $this->faker->unique()->numberBetween(2010, 2020),
         ];
     }
 }
