@@ -16,3 +16,4 @@
 - Get: [**/api/games/{day}**](http:://127.0.0.1:8000/api/games/{day})  Returns all the games played per day and their players
 - Get: [**/api/games/{from}/{to}**](http:://127.0.0.1:8000/api/games/{from}/{to})  Return all the games played within a date range
 - Get: [**/api/players**](http:://127.0.0.1:8000/api/players)  Returns all the Player
+- Get: [**/api/players/100**](http:://127.0.0.1:8000/api/players)  Return the top 100 players 
