@@ -2,6 +2,8 @@
 
 #### This Api game was built with laravel framework version 8.
 
+##### Demo link `[https://my-gameapi.herokuapp.com/](https://my-gameapi.herokuapp.com/)`
+
 ## How to install
 - Clone this github repo. 
 - Edit your **.env** with your database details 
