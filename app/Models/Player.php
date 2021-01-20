@@ -21,8 +21,8 @@ class Player extends Model
         return $this->belongsTo(Game::class, 'game_id')->select('id', 'name');
     }
 
-    public function gameplay()
+    public function Gameplay()
     {
-       return $this->hasMany(Gameplay::class, 'starter_player_id')->select('day');
+       return $this->hasMany(Gameplay::class, 'starter_player_id')->select('starter_player_id', 'day');;
     }
 }

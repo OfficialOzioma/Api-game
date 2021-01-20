@@ -24,8 +24,10 @@ class PlayersController extends Controller
 
     public function get100PlayerPerMonth()
     {
-        $top100 = Player::select('name', 'email', 'nickname', 'game_id')
+        $top100 = Player::select('id','name', 'email', 'nickname', 'game_id')
                 ->limit(100)
+                ->with('games')
+                ->with('gameplay')
                 ->get()
                 ->toJson(JSON_PRETTY_PRINT);
 
