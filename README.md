@@ -6,6 +6,8 @@
 - Clone this github repo. 
 - Edit your **.env** with your database details 
 - Run `Composer install` to install the composer dependencies. 
+- Run `php artisan migrate` this will migrate the database table. 
+
 - Run `php artisan db:seed` to insert the dummy data into the database. 
 - Run `php artisan serve` to start the application. 
 
