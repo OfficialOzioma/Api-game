@@ -21,13 +21,14 @@ class PlayersController extends Controller
         return response($players, 200);
     }
 
-    public function getGame()
-    {
-
-    }
 
     public function get100PlayerPerMonth()
     {
+        $top100 = Player::select('name', 'email', 'nickname', 'game_id')
+                ->limit(100)
+                ->get()
+                ->toJson(JSON_PRETTY_PRINT);
 
+        return response($top100, 200);
     }
 }

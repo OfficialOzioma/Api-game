@@ -22,4 +22,6 @@ Route::get('games', 'GamesController@getAllGames');
 Route::get('games/{day}', 'GameplayController@getAllGamesPerDay');
 Route::get('games/{from}/{to}', 'GameplayController@getAllGamesWithRange');
 Route::get('players', 'PlayersController@getAllPlayers');
+Route::get('players/100', 'PlayersController@get100PlayerPerMonth');
+
 
